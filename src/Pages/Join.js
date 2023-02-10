@@ -110,8 +110,7 @@ export default function Join(){
                             navigate('/')
                         } else {
                             alert('가입이 취소되었습니다.')
-                            window.location.reload()
-                            document.querySelector('#id').focus()
+                            navigate('/')
                         }
 
                     }}>가입하기</button>
