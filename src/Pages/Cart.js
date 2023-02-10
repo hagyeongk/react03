@@ -36,7 +36,7 @@ export default function Cart(){
                                             <button onClick={()=>{dispatch(subCount(state.cart[i].id))}}>-</button>
                                             <button onClick={()=>{dispatch(deleteItem(state.cart[i].id))}}>삭제</button>
                                         </td>
-                                        <td>{state.cart[i].price * state.cart[i].count}</td>
+                                        <td className='price'>{state.cart[i].price * state.cart[i].count}</td>
                                     </tr>
 
                                     
