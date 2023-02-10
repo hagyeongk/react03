@@ -1,6 +1,10 @@
+import { useNavigate } from 'react-router-dom';
 import './Login.css'
 
 export default function Join(){
+
+    const navigate = useNavigate()
+
     return(
         <div>
             
@@ -103,7 +107,7 @@ export default function Join(){
                         let result = window.confirm('가입하시겠습니까?')
                         if(result === true ){
                             alert('가입이 완료되었습니다.')
-                            window.location.href=('http://localhost:3000')
+                            navigate('/')
                         } else {
                             alert('가입이 취소되었습니다.')
                             window.location.reload()

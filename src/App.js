@@ -48,19 +48,19 @@ function App() {
 
       <section className='lnb_box'>
         <div onClick={()=>{navigate('/Phone')}} className='phone'>
-          <img src={process.env.PUBLIC_URL + './images/phonebest03.jpg'} alt="" />
+          <img src={process.env.PUBLIC_URL + '/images/phonebest03.jpg'} alt="phone" />
           <span>Phone Case</span>
         </div>
         <div onClick={()=>{navigate('/Airpod')}} className='air'>
-          <img src={process.env.PUBLIC_URL + './images/mainair07.jpg'} alt="" />
+          <img src={process.env.PUBLIC_URL + '/images/mainair07.jpg'} alt="air" />
           <span>Airpod</span>
         </div>
         <div onClick={()=>{navigate('/Smart')}} className='smart'>
-          <img src={process.env.PUBLIC_URL + './images/mainsmart06.jpg'} alt="" />
+          <img src={process.env.PUBLIC_URL + '/images/mainsmart06.jpg'} alt="smart" />
           <span>Smart</span>
         </div>
         <div onClick={()=>{navigate('/Life')}} className='life'>
-          <img src={process.env.PUBLIC_URL + './images/mainlife07.jpg'} alt="" />
+          <img src={process.env.PUBLIC_URL + '/images/mainlife07.jpg'} alt="life" />
           <span>Life</span>
         </div>
       </section>
@@ -103,7 +103,7 @@ function App() {
                 오묘한 보랏빛과 푸른빛이 섞여 컬러감이<br/> 매력적인 제품입니다<br/>
                 <h5 className='more' onClick={()=>{navigate('/Airpod')}}>더보기</h5>
                 </p>
-                <a href="#!" className="main01"><img src={process.env.PUBLIC_URL + './images/airpod_detail_main01.jpg'} alt="main" /></a>
+                <a href="#!" className="main01"><img src={process.env.PUBLIC_URL + '/images/airpod_detail_main01.jpg'} alt="main" /></a>
             </div>
 
             <h1 className="title">폰 케이스</h1>

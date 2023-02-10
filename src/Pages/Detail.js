@@ -1,7 +1,9 @@
 
 
+import { useDispatch } from "react-redux"
 import { useParams } from "react-router-dom"
 import styled from "styled-components"
+import { addItem } from "./store"
 
 
 
@@ -28,7 +30,7 @@ export default function Detail(props){
 
     const {best} = props
     const {id} = useParams()
-  
+    const dispatch = useDispatch()
 
 
     
@@ -41,7 +43,7 @@ export default function Detail(props){
             <img src={best[id].image} alt="" style={{width: 286, height: 282}}/>
             <p>{best[id].txt}</p>
             <p>{best[id].price}원</p>
-            <Button>장바구니</Button>
+            <Button onClick={()=>{dispatch(addItem({id:best[id].id, title:best[id].title, count:1, price:best[id].price}))}}>장바구니</Button>
         </>
     )
 

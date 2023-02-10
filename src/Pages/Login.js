@@ -1,6 +1,10 @@
+import { useNavigate } from 'react-router-dom'
 import './Login.css'
 
 export default function Login(){
+
+    const navigate = useNavigate()
+
     return(
         <>
             <h1>로그인</h1>
@@ -20,7 +24,7 @@ export default function Login(){
                 
                 if(id === userId && pw === userPw) {
                     alert('환영합니다!')
-                    window.location.href=('http://localhost:3000')
+                    navigate('/')
                 } else if(id === userId && pw !== userPw) {
                     alert('비밀번호가 일치하지 않습니다')
                     window.location.reload()
@@ -37,7 +41,7 @@ export default function Login(){
             }}>로그인</button>
 
             <button className='join_btn' onClick={()=>{
-                window.location.href=('http://localhost:3000/Join')
+                navigate('/Join')
             }}>회원가입</button>
 
         </>
