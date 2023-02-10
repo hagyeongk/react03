@@ -1,0 +1,17 @@
+
+
+.product_box2 {
+    width: 1245px; height: 1000px;
+    margin: 0 auto;
+}
+.product2 {
+    width: 286px; height: 460px;
+    float: left;
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+.product2:hover {
+    transform: translateX(5px);
+    box-shadow: 4px 4px 4px #ccc;
+}
+.product2:nth-child(4n){margin-right: 0;}

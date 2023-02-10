@@ -1,0 +1,122 @@
+*{margin: 0; padding: 0; font-family: 'Spoqa Han Sans Neo', 'sans-serif';}
+a{text-decoration: none; color: black;}
+li{list-style: none;}
+
+.yuphoria {
+    font-size: 65px; height: 80px;
+    text-align: center;
+    line-height: 80px;
+    margin-bottom: 100px;
+}
+.new_box {
+  width: 1550px; height: 450px;
+  margin: 0 auto;
+  display: flex;
+}
+.title {
+  margin-top: 100px;
+  margin-bottom: 30px;
+}
+.new_card {
+  width: 286px;  
+  border: 1px solid #eee;
+  overflow: hidden;
+  margin-right: 30px;
+}
+.new_card:nth-child(5) {margin-right: 0;}
+.new_card:hover {
+  transform: translateX(5px);
+  box-shadow: 4px 4px 4px #ccc;
+}
+.btn_cart, .btn_buy {
+  background-color: black;
+  color: #eee;
+  border: 0;
+}
+.btn_cart {
+  margin-right: 20px;
+}
+.btn_cart:hover {
+  color: black;
+  background-color: #ccc;
+}
+.btn_buy:hover {
+  color: black;
+  background-color: #ccc;
+}
+.more {
+  width: 100%; height: 40px;
+  line-height: 40px;
+  margin-top: 30px;
+  color: cornflowerblue;
+  cursor: pointer;
+}
+.more:hover {
+  color: #2e3387;
+}
+.product_box {
+  width: 1234px;  height: 460px;
+  display: flex;
+  margin: 0 auto;
+}
+.product {
+  width: 286px; height: 460px;
+  border: 1px solid #eee;
+  overflow: hidden;
+  margin-right: 30px;
+}
+.product:nth-child(4) {
+  margin-right: 0;
+}
+.product:hover {
+  transform: translateX(5px);
+  box-shadow: 4px 4px 4px #ccc;
+}
+
+
+.main_box01 {
+  width: 1177px; height: 700px;
+  margin: 0 auto;
+  font-size: 25px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.main_box01 p {
+  width: 500px; height: 500px;
+  margin-top: 250px;
+  float: left;
+  line-height: 45px;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+.more {color:cornflowerblue;}
+.more:hover {color:mediumblue;}
+
+.main01 {
+  display: inline-block;
+  width: 628px; height: 700px;
+  position: relative;
+  margin: 0 auto;
+}
+.main01 img {
+  width: 100%; height: 100%;
+}
+.main01::after {
+  display: inline-block;
+  width: 628px; height: 700px;
+  content: "";
+  font-size: 30px;
+  color: #ccc;
+  background-color: rgba(0, 0, 0, 0.2);
+  position: absolute;
+  top: 0; left: 0;
+  display: none;
+}
+.main01::after content {
+  margin-top: 40px;
+}
+
+.main01:hover::after{
+  display: block;
+}
+
